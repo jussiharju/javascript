@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JWT 2018</title>
+    <script src="harjoitustyo.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="ht.css">
+</head>
+
+<body onload="getTable()">
+
+   <div class="container-fluid">
+      
+      <div class="row">
+           
+         <div class="col col-8">
+            <div class="table-responsive" id="myTable"></div>
+         </div>
+      
+      
+         <div class="col grid col-4">
+         
+            <h1>JWT 2018</h1>
+         
+            <div class="row">
+               <div class="alert alert-info" onclick="setName()">
+                  <strong>Name: </strong>
+                  <span id="name"></span>
+               </div>
+            </div>
+            
+            <div class="row">
+               <div class="alert alert-success">
+                  <strong>Score: </strong>
+                  <span id="score">0</span>
+               </div>    
+            </div>
+            
+            <div class="row">
+               <input class="btn btn-secondary" id="left" type="button" value="left" onclick='moveLeft()'/>
+               <input class="btn btn-primary" id="right" type="button" value="right" onclick='moveRight()'/>      
+               <input class="btn btn-success" id="up" type="button" value="up" onclick='moveUp()'/>
+               <input class="btn btn-danger" id="down" type="button" value="down" onclick='moveDown()'/>
+            </div>
+            
+         </div>
+      </div>
+      
+      
+   </div>
+
+</body>
+
+</html>
